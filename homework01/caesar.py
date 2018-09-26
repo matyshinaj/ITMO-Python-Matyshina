@@ -14,7 +14,7 @@ def encrypt_caesar(plaintext):
             cliphertext += chr(p)
         else:
             cliphertext += plaintext[i]
-    print(cliphertext)
+            
     return cliphertext
 
 def decrypt_caesar(ciphertext):
@@ -33,7 +33,5 @@ def decrypt_caesar(ciphertext):
             plaintext += chr(p)
         else:
             plaintext += ciphertext[i]
-    print(plaintext)
-
 
     return plaintext
