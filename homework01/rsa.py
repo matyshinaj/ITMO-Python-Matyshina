@@ -19,6 +19,10 @@ def is_prime(n):
                 x = False
             else:
                 x = True
+    if x:
+        print("prime")
+    else:
+        print("not prime")
     pass
 
 
@@ -31,7 +35,13 @@ def gcd(a, b):
     >>> gcd(3, 7)
     1
     """
-    # PUT YOUR CODE HERE
+    while a != 0 and b != 0:
+        if a > b:
+            a %= b
+        else:
+            b %=a
+    if a+b == 1:
+        print(a+b)
     pass
 
 
@@ -52,12 +62,9 @@ def generate_keypair(p, q):
         raise ValueError('Both numbers must be prime.')
     elif p == q:
         raise ValueError('p and q cannot be equal')
+    n = p*q
+    phi = (p-1)*(q-1)
 
-    # n = pq
-    # PUT YOUR CODE HERE
-
-    # phi = (p-1)(q-1)
-    # PUT YOUR CODE HERE
 
     # Choose an integer e such that e and phi(n) are coprime
     e = random.randrange(1, phi)
