@@ -12,17 +12,13 @@ def is_prime(n):
     >>> is_prime(8)
     False
     """
-    x = True
+    prime = True
     for i in (2,n):
-        while x:
+        while prime:
             if n%i == 0:
-                x = False
+                prime = False
             else:
-                x = True
-    if x:
-        print("prime")
-    else:
-        print("not prime")
+                prime = True
     pass
 
 
@@ -35,14 +31,27 @@ def gcd(a, b):
     >>> gcd(3, 7)
     1
     """
-    while a != 0 and b != 0:
-        if a > b:
-            a %= b
-        else:
-            b %=a
-    if a+b == 1:
-        print(a+b)
-    pass
+    l = []
+    B = e
+    A = phi
+    l = [[A, B, A % B, A // B]]
+    while A % B != 0:
+        S = A % B
+        A = B
+        B = S
+        k += 1
+        l.append([A, B, A % B, A // B])
+    x = 0
+    y = 1
+    for i in range(k + 1):
+        l[k - i].append(x)
+        l[k - i].append(y)
+        x0 = x
+        y0 = y
+        x = y0
+        p = int(l[k - i - 1][3])
+        y = x0 - y0 * p
+    d = l[0][5] % phi
 
 
 def multiplicative_inverse(e, phi):
@@ -53,8 +62,16 @@ def multiplicative_inverse(e, phi):
     >>> multiplicative_inverse(7, 40)
     23
     """
-    # PUT YOUR CODE HERE
-    pass
+    d = 0
+    for i in range(phi):
+        if (i * e) % phi == 1:
+            d = i
+        break
+
+    return(d)
+
+
+
 
 
 def generate_keypair(p, q):
