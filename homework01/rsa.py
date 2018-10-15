@@ -33,9 +33,9 @@ def gcd(a, b):
     """
     while a != b:
         if a > b:
-            a = a - b
+            a -= b
         else:
-            b = b - a
+            b -= a
     return a
 
 def multiplicative_inverse(e, phi):
