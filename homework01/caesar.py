@@ -1,15 +1,15 @@
-def encrypt_caesar(plaintext):
+def encrypt_caesar(plaintext: str) -> str:
 
     cliphertext = ''
     for i in range(len(plaintext)):
         if ord('a')<= ord(plaintext[i])<=ord('z'):
             s = ord(plaintext[i]) + 3
-            if ord(plaintext[i]) + 3 > ord('z'):
+            if s > ord('z'):
                 s -= 26
             cliphertext += chr(s)
         elif ord('A') <= ord(plaintext[i]) <= ord('Z'):
             p = ord(plaintext[i]) + 3
-            if ord(plaintext[i]) + 3 > ord('z'):
+            if p > ord('Z'):
                 p -= 26
             cliphertext += chr(p)
         else:
@@ -17,18 +17,18 @@ def encrypt_caesar(plaintext):
             
     return cliphertext
 
-def decrypt_caesar(ciphertext):
+def decrypt_caesar(ciphertext: str) -> str:
 
     plaintext=''
     for i in range(len(ciphertext)):
         if ord('a')<= ord(ciphertext[i])<=ord('z'):
             s = ord(ciphertext[i]) - 3
-            if ord(ciphertext[i]) - 3 < ord('a'):
+            if s < ord('a'):
                 s += 26
             plaintext += chr(s)
         elif ord('A') <= ord(ciphertext[i]) <= ord('Z'):
             p = ord(ciphertext[i]) - 3
-            if ord(ciphertext[i]) - 3 < ord('A'):
+            if p < ord('A'):
                 p += 26
             plaintext += chr(p)
         else:
