@@ -1,10 +1,9 @@
 import random
 
 
-def is_prime(n):
+def is_prime(n:int) -> bool:
     """
     Tests to see if a number is prime.
-
     >>> is_prime(2)
     True
     >>> is_prime(11)
@@ -19,17 +18,30 @@ def is_prime(n):
                 prime = False
             else:
                 prime = True
-    pass
 
 
-def gcd(a, b):
+
+def gcd(a:int, b:int) -> int:
     """
     Euclid's algorithm for determining the greatest common divisor.
-
     >>> gcd(12, 15)
     3
     >>> gcd(3, 7)
     1
+    """
+    while a != b:
+        if a > b:
+            a -= b
+        else:
+            b -= a
+    return a
+
+def multiplicative_inverse(e:int, phi:int) -> int:
+    """
+    Euclid's extended algorithm for finding the multiplicative
+    inverse of two numbers.
+    >>> multiplicative_inverse(7, 40)
+    23
     """
     l = []
     B = e
@@ -53,22 +65,6 @@ def gcd(a, b):
         y = x0 - y0 * p
     d = l[0][5] % phi
 
-
-def multiplicative_inverse(e, phi):
-    """
-    Euclid's extended algorithm for finding the multiplicative
-    inverse of two numbers.
-
-    >>> multiplicative_inverse(7, 40)
-    23
-    """
-    d = 0
-    for i in range(phi):
-        if (i * e) % phi == 1:
-            d = i
-        break
-
-    return(d)
 
 
 
