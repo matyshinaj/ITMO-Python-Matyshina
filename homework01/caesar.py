@@ -9,7 +9,7 @@ def encrypt_caesar(plaintext:str) -> str:
             cliphertext += chr(s)
         elif ord('A') <= ord(plaintext[i]) <= ord('Z'):
             p = ord(plaintext[i]) + 3
-            if p > ord('z'):
+            if p > ord('Z'):
                 p -= 26
             cliphertext += chr(p)
         else:
