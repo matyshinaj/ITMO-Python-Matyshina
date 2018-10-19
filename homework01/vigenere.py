@@ -4,7 +4,7 @@ def encrypt_vigenere(plaintext:str, keyword:str) -> str:
     for index, element in enumerate(plaintext):
         if element.isupper():
             ciphertext += chr((ord(element)+ord(keyword[index])) % 26 + ord('A'))
-        elif element in (l):
+        elif element.islower():
             ciphertext += chr((ord(element) + ord(keyword[index])) % 26 + ord('a'))
         else:
             ciphertext += element
@@ -15,9 +15,9 @@ def decrypt_vigenere(ciphertext:str, keyword:str) -> str:
     plaintext = ''
     keyword *= (len(ciphertext) // len(keyword)) + 1
     for index, element in enumerate(ciphertext):
-        elif element.islower():
+        elif element.isupper():
             plaintext += chr((ord(element) - ord(keyword[index])) % 26 + ord('A'))
-        elif element in (l):
+        elif element.islower():
             plaintext += chr((ord(element) - ord(keyword[index])) % 26 + ord('a'))
         else:
             plaintext += element
