@@ -12,11 +12,13 @@ def is_prime(n:int) -> bool:
     >>> is_prime(8)
     False
     """
-    
-    for i in (2,n):
+    prime = True
+    for i in range (2,n):
         if n%i == 0:
-            return False
-    return True
+            prime = False
+            break
+    return prime
+
 
 
 def gcd(a:int, b:int) -> int:
@@ -35,6 +37,8 @@ def gcd(a:int, b:int) -> int:
             b -= a
     return a
 
+
+
 def multiplicative_inverse(e:int, phi:int) -> int:
     """
     Euclid's extended algorithm for finding the multiplicative
@@ -43,15 +47,15 @@ def multiplicative_inverse(e:int, phi:int) -> int:
     >>> multiplicative_inverse(7, 40)
     23
     """
-    l = []
+    k = 0
     B = e
     A = phi
     l = [[A, B, A % B, A // B]]
     while A % B != 0:
+        k += 1
         S = A % B
         A = B
         B = S
-        k += 1
         l.append([A, B, A % B, A // B])
     x = 0
     y = 1
@@ -64,9 +68,7 @@ def multiplicative_inverse(e:int, phi:int) -> int:
         p = int(l[k - i - 1][3])
         y = x0 - y0 * p
     d = l[0][5] % phi
-
-
-
+    return d
 
 
 
@@ -129,3 +131,10 @@ if __name__ == '__main__':
     print("Decrypting message with public key ", public, " . . .")
     print("Your message is:")
     print(decrypt(public, encrypted_msg))
+
+
+
+    
+
+    
+    
