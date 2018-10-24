@@ -29,7 +29,7 @@ def group(values:list, n:int) -> list:
     """
     m = 0
     k = 0
-    p = [[]]
+    p = []
     for value in values:
         p[m].append(value)
         k +=1
@@ -90,7 +90,7 @@ def get_block(values:list, pos:tuple) -> list:
             s.append(values[i+br][j+bc])
     return(s)
 
-def find_empty_positions(grid:list) -> tuple:
+def find_empty_positions(grid:list) -> tuple or None:
     """ Найти первую свободную позицию в пазле
 
     >>> find_empty_positions([['1', '2', '.'], ['4', '5', '6'], ['7', '8', '9']])
