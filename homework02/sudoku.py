@@ -1,3 +1,4 @@
+'''
 def read_sudoku(filename):
     """ Прочитать Судоку из указанного файла """
     digits = [c for c in open(filename).read() if c in '123456789.']
@@ -17,7 +18,7 @@ def display(values):
 
 
 def group(values, n):
-    """
+    """§
     Сгруппировать значения values в список, состоящий из списков по n элементов
 
     >>> group([1,2,3,4], 2)
@@ -25,7 +26,19 @@ def group(values, n):
     >>> group([1,2,3,4,5,6,7,8,9], 3)
     [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     """
-    pass
+    m = 0
+    k = 0
+    p = [[]]
+    for value in values:
+        p[m].append(value)
+        k +=1
+        if k == n:
+            k = 0
+            m += 1
+            p.append([])
+    p.pop()
+    return p
+
 
 
 def get_row(values, pos):
@@ -38,7 +51,7 @@ def get_row(values, pos):
     >>> get_row([['1', '2', '3'], ['4', '5', '6'], ['.', '8', '9']], (2, 0))
     ['.', '8', '9']
     """
-    pass
+    return values[pos[0]]
 
 
 def get_col(values, pos):
@@ -51,8 +64,11 @@ def get_col(values, pos):
     >>> get_col([['1', '2', '3'], ['4', '5', '6'], ['.', '8', '9']], (0, 2))
     ['3', '6', '9']
     """
-    pass
-
+    r = []
+    for i in range(len(values)):
+        r.append(values[i][pos[1]])
+    return (r)
+'''
 
 def get_block(values, pos):
     """ Возвращает все значения из квадрата, в который попадает позиция pos
@@ -65,9 +81,10 @@ def get_block(values, pos):
     >>> get_block(grid, (8, 8))
     ['2', '8', '.', '.', '.', '5', '.', '7', '9']
     """
-    pass
+   
 
 
+'''
 def find_empty_positions(grid):
     """ Найти первую свободную позицию в пазле
 
@@ -148,3 +165,4 @@ if __name__ == '__main__':
         display(grid)
         solution = solve(grid)
         display(solution)
+'''
