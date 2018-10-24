@@ -19,7 +19,7 @@ def display(values:list):
 
 
 def group(values:list, n:int) -> list:
-    """§
+    """
     Сгруппировать значения values в список, состоящий из списков по n элементов
 
     >>> group([1,2,3,4], 2)
@@ -29,7 +29,7 @@ def group(values:list, n:int) -> list:
     """
     m = 0
     k = 0
-    p = []
+    p: list = []
     for value in values:
         p[m].append(value)
         k +=1
@@ -68,7 +68,7 @@ def get_col(values: list, pos: tuple) -> list:
     r = []
     for i in range(len(values)):
         r.append(values[i][pos[1]])
-    return (r)
+    return r
 
 def get_block(values:list, pos:tuple) -> list:
     """ Возвращает все значения из квадрата, в который попадает позиция pos
@@ -90,7 +90,7 @@ def get_block(values:list, pos:tuple) -> list:
             s.append(values[i+br][j+bc])
     return(s)
 
-def find_empty_positions(grid:list) -> tuple or None:
+def find_empty_positions(grid:list) -> tuple and None:
     """ Найти первую свободную позицию в пазле
 
     >>> find_empty_positions([['1', '2', '.'], ['4', '5', '6'], ['7', '8', '9']])
