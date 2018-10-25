@@ -9,7 +9,7 @@ def read_sudoku(filename:str) -> list:
     return grid
 
 
-def display(values):
+def display(values:list):
     """Вывод Судоку """
     width = 2
     line = '+'.join(['-' * (width * 3)] * 3)
