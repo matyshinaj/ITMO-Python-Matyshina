@@ -74,10 +74,11 @@ class GameOfLife:
 
         return self.clist
 
-    def draw_cell_list(self, clist):
+    def draw_cell_list(self, clist: list):
         """ Отображение списка клеток
 
-        :param rects: Список клеток для отрисовки, представленный в виде матрицы
+        :param rects: Список клеток для отрисовки,
+        представленный в виде матрицы
         """
         for i in range(self.cell_height):
             for j in range(self.cell_width):
@@ -90,7 +91,7 @@ class GameOfLife:
 
                 pygame.draw.rect(self.screen, color_cell, rect)
 
-    def get_neighbours(self, cell):
+    def get_neighbours(self, cell: tuple) -> list:
         """ Вернуть список соседей для указанной ячейки
 
         :param cell: Позиция ячейки в сетке, задается кортежем вида (row, col)
@@ -109,7 +110,7 @@ class GameOfLife:
 
         return neighbours
 
-    def update_cell_list(self, cell_list):
+    def update_cell_list(self, cell_list: list) -> list:
         """ Выполнить один шаг игры.
 
         Обновление всех ячеек происходит одновременно. Функция возвращает
@@ -118,7 +119,7 @@ class GameOfLife:
         :param cell_list: Игровое поле, представленное в виде матрицы
         :return: Обновленное игровое поле
         """
-        new_clist = []
+        new_clist: list = []
         k = 0
         new_clist = [[0] * self.cell_width for i in range(self.cell_height)]
         for i in range(self.cell_height):
