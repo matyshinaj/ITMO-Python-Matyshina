@@ -68,7 +68,8 @@ class GameOfLife:
         self.clist = [[0] * self.cell_width for i in range(self.cell_height)]
 
         if randomize:
-            self.clist = [[random.randint(0, 1) for i in range(int(self.cell_width))]
+            self.clist = [[random.randint(0, 1) for i in
+                           range(int(self.cell_width))]
                           for j in range(int(self.cell_height))]
 
         return self.clist
@@ -105,7 +106,8 @@ class GameOfLife:
         x, y = cell
         for i in range(8):
             if x + nx[i] >= 0 and y + ny[i] >= 0:
-                if x + nx[i] < self.cell_height and y + ny[i] < self.cell_width:
+                if x + nx[i] < self.cell_height \
+                        and y + ny[i] < self.cell_width:
                     neighbours.append(self.clist[x + nx[i]][y + ny[i]])
 
         return neighbours
@@ -142,4 +144,3 @@ class GameOfLife:
         self.clist = new_clist
 
         return self.clist
-
