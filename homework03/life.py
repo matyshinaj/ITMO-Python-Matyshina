@@ -22,7 +22,7 @@ class GameOfLife:
         # Скорость протекания игры
         self.speed = speed
 
-    def draw_grid(self):
+    def draw_grid(self) -> None:
         """ Отрисовать сетку """
         for x in range(0, self.width, self.cell_size):
             pygame.draw.line(self.screen, pygame.Color('black'),
@@ -51,7 +51,7 @@ class GameOfLife:
             # Отрисовка списка клеток
             # Выполнение одного шага игры (обновление состояния ячеек)
             self.draw_cell_list(self.clist)
-            self.update_cell_list(self.clist)
+            self.clist = self.update_cell_list(self.clist)
 
             pygame.display.flip()
             clock.tick(self.speed)
@@ -68,9 +68,8 @@ class GameOfLife:
         self.clist = [[0] * self.cell_width for i in range(self.cell_height)]
 
         if randomize:
-            for i in range(self.cell_height):
-                for j in range(self.cell_width):
-                    self.clist[i][j] = random.randint(0, 1)
+            self.clist = [[random.randint(0, 1) for i in range(int(self.cell_width))]
+                          for j in range(int(self.cell_height))]
 
         return self.clist
 
@@ -106,9 +105,7 @@ class GameOfLife:
         x, y = cell
         for i in range(8):
             if x + nx[i] >= 0 and y + ny[i] >= 0:
-                x0 = x + nx[i]
-                y0 = y + ny[i]
-                if x0 < self.cell_height and y0 < self.cell_width:
+                if x + nx[i] < self.cell_height and y + ny[i] < self.cell_width:
                     neighbours.append(self.clist[x + nx[i]][y + ny[i]])
 
         return neighbours
@@ -123,24 +120,24 @@ class GameOfLife:
         :return: Обновленное игровое поле
         """
         new_clist: list = []
-        k = 0
         new_clist = [[0] * self.cell_width for i in range(self.cell_height)]
         for i in range(self.cell_height):
             for j in range(self.cell_width):
                 cell = i, j
                 neighbours = self.get_neighbours(cell)
+                s = 0
                 for neighbour in neighbours:
                     if neighbour == 1:
-                        k += 1
+                        s += 1
 
                 if cell_list[i][j] == 0:
-                    if k == 3:
+                    if s == 3:
                         new_clist[i][j] = 1
 
                 if cell_list[i][j] == 1:
-                    if k == 3 or k == 2:
+                    if s == 3 or s == 2:
                         new_clist[i][j] = 1
-                    if k > 3:
+                    else:
                         new_clist[i][j] = 0
         self.clist = new_clist
 
