@@ -142,3 +142,4 @@ class GameOfLife:
         self.clist = new_clist
 
         return self.clist
+
