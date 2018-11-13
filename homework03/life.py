@@ -1,11 +1,12 @@
-import pygame
-from pygame.locals import *
+import pygame# type: ignore
+from pygame.locals import *# type: ignore
 import random
+from typing import Tuple
 
 
 class GameOfLife:
 
-    def __init__(self, width=640, height=480, cell_size=10, speed=10):
+    def __init__(self, width: int=640, height: int=480, cell_size: int=10, speed: int=10):
         self.width = width
         self.height = height
         self.cell_size = cell_size
@@ -31,7 +32,7 @@ class GameOfLife:
             pygame.draw.line(self.screen, pygame.Color('black'),
                              (0, y), (self.width, y))
 
-    def run(self):
+    def run(self) -> None:
         """ Запустить игру """
         pygame.init()
         clock = pygame.time.Clock()
@@ -44,7 +45,7 @@ class GameOfLife:
         running = True
         while running:
             for event in pygame.event.get():
-                if event.type == QUIT:
+                if event.type == QUIT:# type: ignore
                     running = False
             self.draw_grid()
 
@@ -57,7 +58,7 @@ class GameOfLife:
             clock.tick(self.speed)
         pygame.quit()
 
-    def cell_list(self, randomize=True):
+    def cell_list(self, randomize: bool=True) -> list:
         """ Создание списка клеток.
 
         :param randomize: Если True, то создается список клеток, где
@@ -74,7 +75,7 @@ class GameOfLife:
 
         return self.clist
 
-    def draw_cell_list(self, clist: list):
+    def draw_cell_list(self, clist: list) -> None:
         """ Отображение списка клеток
 
         :param rects: Список клеток для отрисовки,
