@@ -41,7 +41,7 @@ class GameOfLife:
         self.screen.fill(pygame.Color('white'))
 
         # Создание списка клеток
-        self.clist = CellList(self.cell_height, self.cell_width, False)
+        self.clist = CellList(self.cell_height, self.cell_width, True)
 
         running = True
         while running:
@@ -57,6 +57,23 @@ class GameOfLife:
             pygame.display.flip()
             clock.tick(self.speed)
         pygame.quit()
+
+    def draw_cell_list(self, clist) -> None:
+
+        for cell in clist:
+
+            color_cell = pygame.Color('white')
+
+            if cell.is_alive():
+                color_cell = pygame.Color('green')
+
+            x0 = cell.col * self.cell_size
+            y0 = cell.row * self.cell_size
+            x = self.cell_size 
+            y = self.cell_size
+
+            rect = Rect(x0+1, y0+1, x-1, y-1)
+            pygame.draw.rect(self.screen, color_cell, rect)
 
 
 class Cell:
@@ -173,3 +190,6 @@ class CellList:
 
             nrow = i
         return CellList(nrow, ncol, openFile=True, clist=clist)
+if __name__ == '__main__':
+    game = GameOfLife(300, 300, 20)
+    game.run()
