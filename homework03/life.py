@@ -88,9 +88,9 @@ class GameOfLife:
                 if clist[i][j] == 1:
                     color_cell = pygame.Color('green')
 
-                rect = Rect(i * self.cell_size + 1, j * self.cell_size + 1, self.cell_height,
-                            self.cell_width)  # type:ignore
-               
+                rect = Rect(i * self.cell_size + 1, j * self.cell_size + 1, self.cell_size - 1,
+                            self.cell_size - 1)  # type:ignore
+
                 pygame.draw.rect(self.screen, color_cell, rect)
 
     def get_neighbours(self, cell: tuple) -> list:
