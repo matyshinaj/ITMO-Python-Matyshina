@@ -110,7 +110,7 @@ class CellList:
                 for j in range(ncols):
                     self.clist[i][j].state = random.randint(0, 1)
 
-    def get_neighbours(self, cell):
+    def get_neighbours(self, cell: Cell) -> list:
         neighbours = []
         row = cell.row
         col = cell.col
