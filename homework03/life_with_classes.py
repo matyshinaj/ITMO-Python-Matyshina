@@ -52,6 +52,7 @@ class GameOfLife:
 
             # Отрисовка списка клеток
             # Выполнение одного шага игры (обновление состояния ячеек)
+            self.draw_cell_list(self.clist)
             self.clist = self.clist.update()
 
             pygame.display.flip()
@@ -69,10 +70,10 @@ class GameOfLife:
 
             x0 = cell.col * self.cell_size
             y0 = cell.row * self.cell_size
-            x = self.cell_size 
+            x = self.cell_size
             y = self.cell_size
 
-            rect = Rect(x0+1, y0+1, x-1, y-1)
+            rect = Rect(x0 + 1, y0 + 1, x - 1, y - 1)
             pygame.draw.rect(self.screen, color_cell, rect)
 
 
@@ -190,6 +191,8 @@ class CellList:
 
             nrow = i
         return CellList(nrow, ncol, openFile=True, clist=clist)
+
+
 if __name__ == '__main__':
     game = GameOfLife(300, 300, 20)
     game.run()
