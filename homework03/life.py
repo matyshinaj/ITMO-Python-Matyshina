@@ -1,12 +1,12 @@
-import pygame# type: ignore
-from pygame.locals import *# type: ignore
+import pygame  # type: ignore
+from pygame.locals import *  # type: ignore
 import random
 from typing import Tuple
 
 
 class GameOfLife:
 
-    def __init__(self, width: int=640, height: int=480, cell_size: int=10, speed: int=10):
+    def __init__(self, width: int = 640, height: int = 480, cell_size: int = 10, speed: int = 10):
         self.width = width
         self.height = height
         self.cell_size = cell_size
@@ -45,7 +45,7 @@ class GameOfLife:
         running = True
         while running:
             for event in pygame.event.get():
-                if event.type == QUIT:# type: ignore
+                if event.type == QUIT:  # type: ignore
                     running = False
             self.draw_grid()
 
@@ -58,7 +58,7 @@ class GameOfLife:
             clock.tick(self.speed)
         pygame.quit()
 
-    def cell_list(self, randomize: bool=True) -> list:
+    def cell_list(self, randomize: bool = True) -> list:
         """ Создание списка клеток.
 
         :param randomize: Если True, то создается список клеток, где
@@ -88,7 +88,7 @@ class GameOfLife:
                 if clist[i][j] == 1:
                     color_cell = pygame.Color('green')
 
-                rect = Rect(i, j, self.cell_size, self.cell_size)
+                rect = Rect(i * self.cell_size, j * self.cell_size, self.cell_size, self.cell_size)  # type:ignore
 
                 pygame.draw.rect(self.screen, color_cell, rect)
 
@@ -145,3 +145,8 @@ class GameOfLife:
         self.clist = new_clist
 
         return self.clist
+
+
+if __name__ == '__main__':
+    game = GameOfLife(300, 300, 20)
+    game.run()
