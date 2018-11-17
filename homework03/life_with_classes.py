@@ -2,7 +2,6 @@ import pygame
 from pygame.locals import *
 import random
 from copy import deepcopy
-import unittest
 
 
 class GameOfLife:
