@@ -1,7 +1,6 @@
-import datetime as dt
+import datetime as datetime
 from statistics import median
 from typing import Optional
-
 from api import get_friends
 from api_models import User
 

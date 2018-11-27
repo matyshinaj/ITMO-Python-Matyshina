@@ -9,10 +9,8 @@ from api import messages_get_history
 from api_models import Message
 import config
 
-
 Dates = List[datetime.date]
 Frequencies = List[int]
-
 
 plotly.tools.set_credentials_file(
     username=config.PLOTLY_CONFIG['username'],
@@ -29,7 +27,13 @@ def count_dates_from_messages(messages: List[Message]) -> Tuple[Dates, Frequenci
 
     :param messages: список сообщений
     """
-    # PUT YOUR CODE HERE
+    dates = []
+    for message in messages:
+        dates.append(message['date'])
+    for i in range(len(dates)):
+        dates[i] = datetime.datetime.fromtimestamp(dates[i]).strftime('%Y-%m-%d')
+    if dates:
+        return dates
 
 
 def plotly_messages_freq(dates: Dates, freq: Frequencies) -> None:
@@ -38,4 +42,5 @@ def plotly_messages_freq(dates: Dates, freq: Frequencies) -> None:
     :param date: список дат
     :param freq: число сообщений в соответствующую дату
     """
-    # PUT YOUR CODE HERE
+    data = [go.Scatter(x=dates, y=freq)]
+    py.plot(data)
