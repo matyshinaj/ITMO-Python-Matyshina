@@ -47,7 +47,7 @@ def plotly_messages_freq(dates: Dates, freq: Frequencies) -> None:
 
 
 if __name__ == '__main__':
-    message = messages_get_histossry(164416858)
+    message = messages_get_history(164416858)
     message = [Message(**message) for message in message]
     date, freq = count_dates_from_messages(message)
     plotly_messages_freq(date, freq)
