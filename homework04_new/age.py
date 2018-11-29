@@ -18,7 +18,7 @@ def age_predict(user_id: int) -> Optional[float]:
     dates = []
     new_dates = []
     date = get_friends(user_id, 'bdate')
-    for i in date['response']['items']:
+    for i in date:
         if i.get('bdate'):
             dates.append(i['bdate'])
 
@@ -32,12 +32,8 @@ def age_predict(user_id: int) -> Optional[float]:
         s = list(map(int, k.split('.')))
         age = (datetime.date.today() - datetime.date(s[2], s[1], s[0])) / 365.25
         grade.append(age.days)
-    average = 0
 
-    m = 0
-    for k in range(len(grade)):
-        average += int(grade[k])
-        m += 1
-    average /= m
-    return round(average)
-
+    if len(grade) > 0:
+        return median(grade)
+    else:
+        return None

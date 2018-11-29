@@ -24,7 +24,7 @@ def get(url, params={}, timeout=5, max_retries=5, backoff_factor=0.3):
             time.sleep(backoff_value)
 
 
-def get_friends(user_id, fields) -> dict:
+def get_friends(user_id, fields="") -> dict:
     """ Вернуть данных о друзьях пользователя
 
     :param user_id: идентификатор пользователя, список друзей которого нужно получить
@@ -44,7 +44,7 @@ def get_friends(user_id, fields) -> dict:
     query = "{domain}/friends.get?access_token={access_token}&user_id={user_id}&fields={fields}&v={version}".format(
         **query_params)
     response = get(query)
-    return response.json()
+    return response.json()['response']['items']
 
 
 def messages_get_history(user_id, offset=0, count=200) -> list:

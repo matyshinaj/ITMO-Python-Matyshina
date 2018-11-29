@@ -9,8 +9,8 @@ class TestAgePredict(unittest.TestCase):
 
     def test_friends_with_bdate_field(self):
         today = dt.date.today()
-        yesterday = dt.date(day=today.day-1, month=today.month, year=1996).strftime('%d.%m.%Y')
-        tomorrow = dt.date(day=today.day+1, month=today.month, year=1992).strftime('%d.%m.%Y')
+        yesterday = dt.date(day=today.day - 1, month=today.month, year=1996).strftime('%d.%m.%Y')
+        tomorrow = dt.date(day=today.day + 1, month=today.month, year=1992).strftime('%d.%m.%Y')
         response = [
             {'id': 1, 'first_name': '', 'last_name': '', 'bdate': yesterday, 'online': 0},
             {'id': 2, 'first_name': '', 'last_name': '', 'bdate': tomorrow, 'online': 0},
@@ -44,4 +44,3 @@ class TestAgePredict(unittest.TestCase):
         with patch('age.get_friends', return_value=response):
             predicted_age = age_predict(user_id=1)
             self.assertEqual(predicted_age, None)
-

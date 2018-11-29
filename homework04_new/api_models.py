@@ -20,7 +20,7 @@ class Message(BaseModel):
     """ Модель сообщения """
     id: int
     body: Optional[str]
-    user_id: Optional[str]
+    user_ids: Optional[str]
     date: float
     read_state: Optional[int]
     out: int
