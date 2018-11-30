@@ -38,6 +38,7 @@ def plot_graph(user_id):
     visual_style = {
         "vertex_size": 20,
         "edge_color": "gray",
+        "vertex_label_dist": 1.6,
         "layout": g.layout_fruchterman_reingold(
             maxiter=100000,
             area=n ** 2,
