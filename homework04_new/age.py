@@ -30,7 +30,7 @@ def age_predict(user_id: int) -> Optional[float]:
     grade = []
     for k in dates:
         s = list(map(int, k.split('.')))
-        age = (datetime.date.today() - datetime.date(s[2], s[1], s[0])) / 365.25
+        age = (datetime.date.today() - datetime.date(s[2], s[1], s[0])) // 365
         grade.append(age.days)
 
     if len(grade) > 0:

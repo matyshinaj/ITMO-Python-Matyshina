@@ -71,12 +71,20 @@ def messages_get_history(user_id, offset=0, count=200) -> list:
     query = "{domain}/messages.getHistory?access_token={access_token}&user_id={user_id}&offset={offset}&count={count}&v={version}".format(
         **query_params)
     response = requests.get(query)
+    json_doc = response.json()
+    fail = json_doc.get('error')
+    if fail:
+        raise Exception(json_doc['error']['error_msg'])
     count = response.json()['response']['count']
     messages = []
     while count >= 200:
         query = "{domain}/messages.getHistory?access_token={access_token}&user_id={user_id}&offset={offset}&count={count}&v={version}".format(
             **query_params)
         response = requests.get(query)
+        json_doc = response.json()
+        fail = json_doc.get('error')
+        if fail:
+            raise Exception(json_doc['error']['error_msg'])
         messages.extend(response.json()['response']['items'])
         query_params['offset'] += 200
         count -= 200
@@ -85,6 +93,10 @@ def messages_get_history(user_id, offset=0, count=200) -> list:
         query = "{domain}/messages.getHistory?access_token={access_token}&user_id={user_id}&offset={offset}&count={count}&v={version}".format(
             **query_params)
         response = requests.get(query)
+        json_doc = response.json()
+        fail = json_doc.get('error')
+        if fail:
+            raise Exception(json_doc['error']['error_msg'])
         messages.extend(response.json()['response']['items'])
 
     return messages
