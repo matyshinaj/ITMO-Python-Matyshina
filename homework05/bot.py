@@ -135,7 +135,8 @@ def get_near_lesson(message):
                             week_number = 2
                         web_page = get_page(group, str(week_number))
                     continue
-
+                if find:
+                    break
             if find:
                 break
 
@@ -150,8 +151,9 @@ def get_tomorrow(message):
     """ Получить расписание на следующий день """
     group = message.text.split()[1]
     day = datetime.datetime.weekday(datetime.datetime.today()) + 2
+    print(day)
     week = datetime.date.today().isocalendar()[1]
-    if day >= 6:
+    if day > 7:
         day = 1
         week += 1
     if week % 2 == 0:
