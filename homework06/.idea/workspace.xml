@@ -2,12 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1daac148-198c-4e8e-9a0f-f15f9f49a474" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../homework05/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework05/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework05/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework05/Procfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../homework05/Procfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework05/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../homework05/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework05/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../homework05/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework05/runtime.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../homework05/runtime.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.README.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.misc.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.modules.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.program.iml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.vcs.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.workspace.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.._importlib_modulespec.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.._importlib_modulespec.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.._random.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.._random.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.abc.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.abc.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.builtins.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.builtins.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.codecs.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.codecs.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.io.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.io.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.mmap.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.mmap.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.posix.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.posix.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.random.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.random.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.sudoku.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.sudoku.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.sys.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.sys.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.types.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.types.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.typing.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.typing.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/collections/..__init__.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/collections/..__init__.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/collections/.abc.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/collections/.abc.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/..__init__.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/..__init__.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.abc.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.abc.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.machinery.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.machinery.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.util.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.util.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/os/..__init__.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/os/..__init__.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/os/.path.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/os/.path.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.README.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.._importlib_modulespec.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.._importlib_modulespec.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.._random.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.._random.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.abc.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.abc.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.builtins.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.builtins.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.codecs.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.codecs.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.io.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.io.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.mmap.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.mmap.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.posix.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.posix.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.random.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.random.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.sys.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.sys.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.types.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.types.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.typing.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.typing.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/collections/..__init__.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/collections/..__init__.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/collections/.abc.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/collections/.abc.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/..__init__.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/..__init__.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.abc.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.abc.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.machinery.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.machinery.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.util.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.util.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/os/..__init__.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/os/..__init__.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/os/.path.data.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/os/.path.meta.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/homework06.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/homework06.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.news_template.tpl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/.README.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackernews.py" beforeDir="false" afterPath="$PROJECT_DIR$/hackernews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraputils.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraputils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +106,103 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/homework06$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1549984192226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/homework06$scraputils.coverage" NAME="scraputils Coverage Results" MODIFIED="1550662464011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/homework06$test.coverage" NAME="test Coverage Results" MODIFIED="1550673471102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="homework06" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackernews.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news_template.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scraputils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scraputils.py" />
+        <option value="$PROJECT_DIR$/hackernews.py" />
+        <option value="$PROJECT_DIR$/db.py" />
+        <option value="$PROJECT_DIR$/../../test.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="620" />
+    <option name="y" value="68" />
+    <option name="width" value="820" />
     <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,12 +211,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="homework06" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework06" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,6 +242,107 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="homework06" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="homework06" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scraputils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="homework06" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraputils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="homework06" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python.scraputils" />
+      <item itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.scraputils" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -58,29 +353,98 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549891331061</updated>
+      <workItem from="1549984022348" duration="21682000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21682000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.18240343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50089765" side_tool="true" visible="true" weight="0.18240343" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28554216" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32891566" />
+      <window_info anchor="right" x="0" y="0" width="310" height="700" id="Documentation" side_tool="true" weight="0.3297568" />
+      <window_info anchor="right" id="Database" weight="0.3297568" />
+      <window_info anchor="right" id="SciView" weight="0.3297568" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackernews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraputils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news_template.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
