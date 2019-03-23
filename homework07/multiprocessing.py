@@ -66,7 +66,7 @@ class ProcessPool:
     def test_computation(self, function, input_queue: Queue, output_queue: Queue):
         worker_first = multiprocessing.Process(target=test_worker_func, args=(function, input_queue, output_queue))
         self.workers.append(worker_first)
-        thread_info = threading.Thread(target=self.get_proc_info, args=())
+        thread_info = threading.Thread(target=self.get_info, args=())
         worker_first.start()
         thread_info.start()
         worker_first.join()
