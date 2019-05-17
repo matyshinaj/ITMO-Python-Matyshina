@@ -1,7 +1,9 @@
 from bottle import (
     route, run, template, request, redirect
 )
-
+import bottle
+import string
+import os
 from scraputils import get_news
 from db import News, session
 from bayes import NaiveBayesClassifier
@@ -11,29 +13,36 @@ from bayes import NaiveBayesClassifier
 def news_list():
     s = session()
     rows = s.query(News).filter(News.label == None).all()
-    return template('news_template', rows=rows)
+    return template("news_template", rows=rows)
 
 
 @route("/add_label/")
 def add_label():
-    id = request.query.id
-    label = request.query.label
     s = session()
-    news = s.query(News).filter(News.id == id).first()
-    news.label = label
+    news = s.query(News).filter(News.id == request.query.id).one()
+    news.label = request.query.label
     s.commit()
     redirect("/news")
 
 
 @route("/update")
 def update_news():
-    news = get_news("https://news.ycombinator.com/newest", n_pages=30)
     s = session()
-    for i in news:
-        if s.query(News).filter(News.title == i['title'], News.author == i['author']).first():
-            break
-        else:
-            s.add(News(**i))
+    news_list = get_news("https://news.ycombinator.com/newest", n_pages=5)
+    news_list_bd = s.query(News).all()
+    if len(news_list_bd) > 0:
+        for new_news in news_list:
+            f = False
+            for old_news_bd in news_list_bd:
+                if new_news['author'] == old_news_bd.author and new_news['title'] == old_news_bd.title:
+                    f = True
+                    break
+            if not f:
+                s.add(News(**new_news))
+
+    else:
+        for new_news in news_list:
+            s.add(News(**new_news))
     s.commit()
     redirect("/news")
 
@@ -46,25 +55,28 @@ def classify_news():
     y_train = [news.label for news in labeled_news]
     classifier.fit(x_train, y_train)
 
-    news = s.query(News).filter(News.label == None).all()
-    for one in news:
-        [prediction] = classifier.predict([clean(one.title)])
+    rows = s.query(News).filter(News.label == None).all()
+    good, maybe, never = [], [], []
+    for row in rows:
+        prediction = classifier.predict(clean(row.title))
         if prediction == 'good':
-            good.append(one)
+            good.append(row)
         elif prediction == 'maybe':
-            maybe.append(one)
+            maybe.append(row)
         else:
-            never.append(one)
+            never.append(row)
 
-    return template('news_recommendations', good=good, maybe=maybe, never=never)
+    return template('news_recom', good=good, maybe=maybe, never=never)
 
 
-if __name__=="__main__":
-    s = session()
-    labeled_news = s.query(News).filter(News.label != None).all()
-    x_train = [clean(news.title) for news in labeled_news]
-    y_train = [news.label for news in labeled_news]
+def clean(s):
+    translator = str.maketrans("", "", string.punctuation)
+    return s.translate(translator).lower()
+
+
+if __name__ == "__main__":
     classifier = NaiveBayesClassifier()
-    classifier.fit(x_train, y_train)
     run(host="localhost", port=8080)
+
+
 

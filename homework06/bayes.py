@@ -1,73 +1,86 @@
+from collections import Counter
 import math
 
 
 class NaiveBayesClassifier:
-
-    def __init__(self, alpha=1):
+    def __init__(self, alpha=0.05):
         self.alpha = alpha
-        self.labels = []
-        self.table = []
-        self.p_labels = []
 
     def fit(self, X, y):
-        """ Fit Naive Bayes classifier according to X, y. """
-        self.labels = [i for i in set(y)]
-        self.labels.sort()
-        classes = len(self.labels)
-        labels_count = [0] * classes
-        for i in range(len(y)):
-            y[i] = self.labels.index(y[i]) + 1
-            labels_count[y[i] - 1] += 1
+        """ Fit Naive Bayes classifier according to X, y."""
+        lst = []
+        for sentence, clss in zip(X, y):
+            for word in sentence.split():
+                lst.append((word, clss))
+        self.words_labels = Counter(lst)
+        print("words_labels", self.words_labels)
+        self.counted_labels = dict(Counter(y))
+        print("counted_labels", self.counted_labels)
+        words = [word for sentence in X for word in sentence.split()]
+        self.counted_words = dict(Counter(words))
+        print("counted_words", self.counted_words)
 
-        self.table = [[] for _ in range(classes * 2 + 1)]
-        self.p_labels = [math.log(number / sum(labels_count)) for number in labels_count]
+        self.model = {
+            'labels': {},
+            'words': {},
+        }
 
-        for i in range(len(X)):
-            words = X[i].split()
-            for word in words:
-                if word in self.table[0]:
-                    self.table[y[i]][self.table[0].index(word)] += 1
-                else:
-                    self.table[0].append(word)
-                    self.table[y[i]].append(1)
-                    index = y[i]
-                    for j in range(classes - 1):
-                        index = (index % classes) + 1
-                        self.table[index].append(0)
-                    for column in range(classes + 1, classes * 2 + 1):
-                        self.table[column].append(0)
+        for var_label in self.counted_labels:
+            params = {
+                'count_by_label': self.count_words(var_label),
+                'likelihood': self.counted_labels[var_label] / len(y),
+            }
 
-        sums = [sum(self.table[i + 1]) for i in range(classes)]
-        dim = len(self.table[0])
+            self.model['labels'][var_label] = params
 
-        for line in range(dim):
-            for column in range(classes + 1, classes * 2 + 1):
-                self.table[column][line] = (self.table[column - classes][line] + self.alpha) / \
-                                           (sums[column - classes - 1] + self.alpha * dim)
+        for word in self.counted_words:
+            params = {}
+
+            for var_label in self.counted_labels:
+                params[var_label] = self.smoothing_likelihood(word, var_label)
+
+            self.model['words'][word] = params
+
+        # print("model: ", self.model)
 
     def predict(self, X):
-        """ Perform classification on an array of test vectors X. """
-        labels = []
-        classes = len(self.labels)
-        for string in X:
-            string_labels = [i for i in self.p_labels]
-            words = string.split()
+        words = X.split()
+        likely_labels = []
+        for cur_label in self.model['labels']:
+            likelihood = self.model['labels'][cur_label]['likelihood']
+            total_score = math.log(likelihood, math.e)
             for word in words:
-                if word in self.table[0]:
-                    for i in range(classes):
-                        string_labels[i] += math.log(self.table[i + classes + 1][self.table[0].index(word)])
-            for i in range(classes):
-                if string_labels[i] == max(string_labels):
-                    labels.append(self.labels[i])
-                    break
-        return labels
+                word_dict = self.model['words'].get(word, None)
+                if word_dict:
+                    total_score += math.log(word_dict[cur_label], math.e)
+            likely_labels.append((total_score, cur_label))
+        _, answer = max(likely_labels)
+        return answer
 
     def score(self, X_test, y_test):
-        """ Returns the mean accuracy on the given test data and labels. """
-        prediction = self.predict(X_test)
+        correct = 0
+        for i in range(len(X_test)):
+            answer = self.predict(X_test[i])
+            if answer == y_test[i]:
+                correct += 1
+
+        return correct / len(y_test)
+
+    def smoothing_likelihood(self, word, cur_label):
+        """ Returns the smoothed likelihood with the given word and label in loop. """
+        nc = self.model['labels'][cur_label]['count_by_label']
+        nic = self.words_labels.get((word, cur_label), 0)
+        d = len(self.counted_words)
+        alpha = self.alpha
+
+        return (nic + alpha) / (nc + alpha * d)
+
+    def count_words(self, cur_label):
+        """ Returns the count of words with the given label. """
         count = 0
-        for i in range(len(prediction)):
-            if prediction[i] == y_test[i]:
-                count += 1
-        score = count / len(y_test)
-        return score
+
+        for word, label_name in self.words_labels:
+            if cur_label == label_name:
+                count += self.words_labels[(word, cur_label)]
+
+        return count
