@@ -2,100 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8bef4f5-53d8-4a04-a6da-f7fc942ce9d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.README.md.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.misc.xml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.modules.xml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.program.iml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.vcs.xml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.workspace.xml.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.._importlib_modulespec.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.._importlib_modulespec.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.._random.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.._random.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.abc.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.abc.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.builtins.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.builtins.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.codecs.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.codecs.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.io.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.io.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.mmap.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.mmap.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.posix.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.posix.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.random.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.random.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.sudoku.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.sudoku.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.sys.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.sys.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.types.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.types.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.typing.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/.typing.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/collections/..__init__.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/collections/..__init__.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/collections/.abc.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/collections/.abc.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/..__init__.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/..__init__.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.abc.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.abc.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.machinery.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.machinery.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.util.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/importlib/.util.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/os/..__init__.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/os/..__init__.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/os/.path.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework02/.mypy_cache/3.7/os/.path.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.README.md.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.._importlib_modulespec.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.._importlib_modulespec.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.._random.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.._random.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.abc.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.abc.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.builtins.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.builtins.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.codecs.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.codecs.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.io.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.io.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.mmap.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.mmap.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.posix.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.posix.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.random.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.random.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.sys.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.sys.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.types.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.types.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.typing.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/.typing.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/collections/..__init__.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/collections/..__init__.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/collections/.abc.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/collections/.abc.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/..__init__.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/..__init__.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.abc.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.abc.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.machinery.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.machinery.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.util.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/importlib/.util.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/os/..__init__.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/os/..__init__.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/os/.path.data.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework03/.mypy_cache/3.7/os/.path.meta.json.icloud" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework06/bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../homework06/bayes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework06/hackernews.py" beforeDir="false" afterPath="$PROJECT_DIR$/../homework06/hackernews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework06/news.db" beforeDir="false" afterPath="$PROJECT_DIR$/../homework06/news.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,10 +12,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1333">
+            <state relative-caret-position="797">
               <caret line="172" column="26" lean-forward="true" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -117,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -129,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2775">
+            <state relative-caret-position="3210">
               <caret line="214" column="17" selection-start-line="214" selection-start-column="17" selection-end-line="214" selection-end-column="17" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -213,12 +120,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558096202822</updated>
-      <workItem from="1558096204370" duration="822000" />
+      <workItem from="1558096204370" duration="1085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="822000" />
+    <option name="totallyTimeSpent" value="1085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="848" extended-state="6" />
@@ -251,9 +158,19 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="172" column="26" lean-forward="true" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2775">
+        <state relative-caret-position="3210">
           <caret line="214" column="17" selection-start-line="214" selection-start-column="17" selection-end-line="214" selection-end-column="17" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -265,16 +182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="33" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1333">
-          <caret line="172" column="26" lean-forward="true" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
